@@ -1,0 +1,301 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tailwind</title>
+</head>
+
+<body class="bg-gray-800">
+    <nav class="bg-gray-800 py-6 relative">
+        <div class="container mx-auto flex  px-1 lg:px-8 lg:px-0">
+            <div class="flex flex-grow items-center">
+                <img src="img/logo.svg" alt="Logo">
+            </div>
+            <div class="flex md:hidden ">
+                <img src="img/icon-menu.svg" alt="menu" onclick="abrirMenu();">
+            </div>
+
+            <div id="menu"
+                class="md:flex hidden flex-grow justify-between absolute md:relative md:top-0 top-20 left-0 bg-gray-800 w-full md:w-auto items-center py-14 md:py-0 px-8">
+                <div class="flex flex-col md:flex-row mb-8 md:mb-0">
+                    <a href="#" class="text-white md:mr-5 mb-8 md:mb-0">Incio</a>
+                    <a href="#" class="text-white md:mr-5 mb-8 md:mb-0">Cursos</a>
+                    <a href="#" class="text-white md:mr-5 mb-8 md:mb-0">Blog</a>
+                    <a href="#" class="text-white">Compañía</a>
+                </div>
+                <div class="flex flex-col md:flex-row text-center">
+                    <a href="#"
+                        class="text-white border border-white py-2.5 px-3 lg:px-5 rounded-md hover:bg-white hover:text-gray-800 transition duration-500 ease-in-out md:mr-5 md:mr-5 mb-8 md:mb-0">Iniciar
+                        sesión</a>
+                    <a href="#"
+                        class="text-white bg-blue-500 border border-blue-500 py-2.5 px-3 lg:px-5 rounded-md hover:bg-blue-600 hover:border-blue-600 transition duration-500 ease-in-out">Registrate</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="py-24">
+        <div class="container mx-auto px-8">
+            <div class="text-center md:w-3/5 mx-auto mb-24">
+                <h1 class="text-3xl md:text-5xl font-medium text-white mb-2.5">La mejor plataforma para impulsar tu
+                    carrera de UX/UI</h1>
+                <p class="text-lg text-gray-400 mb-7">Contamos con la comunidad más grande de expertos en UX/UI para
+                    brindasrte el contenido ideal para tu aprendizaje</p>
+                <div class="flex flex-col md:flex-row justify-center">
+                    <a href="#"
+                        class="text-white border border-whitep py-3.5 px-6 rounded-md sm:mr-5 hover:bg-white hover:text-gray-800 transition duration-500 ease-in-out mb-5 md:mb-0">Prueba
+                        gratis 7 días</a>
+                    <a href="#"
+                        class="text-white bg-blue-500 border border-blue-500p py-3.5 px-6 rounded-md hover:bg-blue-600 hover:border-blue-600 transition duration-500 ease-in-out">Comienza
+                        tu carrera</a>
+                </div>
+            </div>
+            <img src="img/img-01.png" alt="móvil-imagen" class="mx-auto">
+        </div>
+    </section>
+    <section class="py-24">
+        <div class="container mx-auto px-8">
+            <p class="text-lg text-gray-400 mb-10 text-center">Empresas que confian en nosotros para capacitar a su
+                equipo</p>
+            <div class="flex flex-wrap justify-center">
+                <img src="/img/logo-linkedin.svg" alt="logo-linkedin">
+                <img src="/img/logo-facebook.svg" alt="logo-facebook">
+                <img src="/img/logo-microsoft.svg" alt="logo-microsoft">
+                <img src="/img/logo-amazon.svg" alt="logo-amazon">
+                <img src="/img/logo-google.svg" alt="logo-google">
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-24">
+        <div class="container mx-auto px-8">
+            <div class="text-center mb-10">
+                <h1 class="text-3xl md:text-5xl font-semibold mb-2.5">Planes pensados para tí</h1>
+                <p class="text-lg text-gray-400">Elige el plan que se adapte a tus necesidades</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="border border-gray-200 p-7 rounded-md mb-5 md:mb-0">
+                    <h3 class="text-3xl font-semibold mb-5">Básico</h3>
+                    <div class="flex items-center mb-5">
+                        <h3 class="text-3xl font-medium">$129</h3>
+                        <p class="text-gray-400">/Mensual</p>
+                    </div>
+                    <p class="text-gray-400 mb-5">Perfecto para estudiantes y profesionales que estén iniciando en el
+                        diseño UX/UI</p>
+                    <ul class="mb-5">
+                        <li class="flex mb-4"><img src="img/icon-check.svg" alt="check-icon" class="mr-2.5"> Acceso a
+                            más de 100 cursos</li>
+                        <li class="flex mb-4"><img src="img/icon-check.svg" alt="check-icon" class="mr-2.5"> Mensaje a
+                            los instructores</li>
+                        <li class="flex"><img src="img/icon-check.svg" alt="check-icon" class="mr-2.5"> Cursos nuevos
+                            cada mes</li>
+                    </ul>
+                    <a class="flex bg-blue-500 py-3.5 text-white rounded-md mb-5 justify-center hover:bg-blue-600 hover:border-blue-600 transition duration-500 ease-in-out"
+                        href="#">Comprar suscripción</a>
+                    <a class="text-blue-500 flex justify-center hover:text-blue-600" href="#">Comienza una prueba de 14
+                        días</a>
+                </div>
+                <div class="border border-gray-200 p-7 rounded-md mb-5 md:mb-0">
+                    <h3 class="text-3xl font-semibold mb-5">Básico</h3>
+                    <div class="flex items-center mb-5">
+                        <h3 class="text-3xl font-medium">$129</h3>
+                        <p class="text-gray-400">/Mensual</p>
+                    </div>
+                    <p class="text-gray-400 mb-5">Perfecto para estudiantes y profesionales que estén iniciando en el
+                        diseño UX/UI</p>
+                    <ul class="mb-5">
+                        <li class="flex mb-4"><img src="img/icon-check.svg" alt="check-icon" class="mr-2.5"> Acceso a
+                            más de 100 cursos</li>
+                        <li class="flex mb-4"><img src="img/icon-check.svg" alt="check-icon" class="mr-2.5"> Mensaje a
+                            los instructores</li>
+                        <li class="flex"><img src="img/icon-check.svg" alt="check-icon" class="mr-2.5"> Cursos nuevos
+                            cada mes</li>
+                    </ul>
+                    <a class="flex bg-blue-500 py-3.5 text-white rounded-md mb-5 justify-center hover:bg-blue-600 hover:border-blue-600 transition duration-500 ease-in-out"
+                        href="#">Comprar suscripción</a>
+                    <a class="text-blue-500 flex justify-center hover:text-blue-600" href="#">Comienza una prueba de 14
+                        días</a>
+                </div>
+                <div class="border border-gray-200 p-7 rounded-md mb-5 md:mb-0">
+                    <h3 class="text-3xl font-semibold mb-5">Básico</h3>
+                    <div class="flex items-center mb-5">
+                        <h3 class="text-3xl font-medium">$129</h3>
+                        <p class="text-gray-400">/Mensual</p>
+                    </div>
+                    <p class="text-gray-400 mb-5">Perfecto para estudiantes y profesionales que estén iniciando en el
+                        diseño UX/UI</p>
+                    <ul class="mb-5">
+                        <li class="flex mb-4"><img src="img/icon-check.svg" alt="check-icon" class="mr-2.5"> Acceso a
+                            más de 100 cursos</li>
+                        <li class="flex mb-4"><img src="img/icon-check.svg" alt="check-icon" class="mr-2.5"> Mensaje a
+                            los instructores</li>
+                        <li class="flex"><img src="img/icon-check.svg" alt="check-icon" class="mr-2.5"> Cursos nuevos
+                            cada mes</li>
+                    </ul>
+                    <a class="flex bg-blue-500 py-3.5 text-white rounded-md mb-5 justify-center hover:bg-blue-600 hover:border-blue-600 transition duration-500 ease-in-out"
+                        href="#">Comprar suscripción</a>
+                    <a class="text-blue-500 flex justify-center hover:text-blue-600" href="#">Comienza una prueba de 14
+                        días</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100 py-24">
+        <div class="container mx-auto px-8">
+            <div class="grid md:grid-cols-2 gap-4 mb-24">
+                <div class="flex items-center mb-5 md:mb-0">
+                    <div class="md:mr-12">
+                        <h2 class="text-3xl md:text-5xl font-semibold mb-2.5">Mejora tu carrera profesional con nuestros
+                            cursos</h2>
+                        <p class="text-lg text-gray-400 mb-5">Tendrás acceso a cursos bñasicos para reforzar los
+                            conceptos generales y a cursos avanzados
+                            para adquirir experiencia de casos reales</p>
+                        <a href="#" class="text-lg font-semibold flex">Ver cursos <img src="img/icon-forward.svg" alt=""
+                                class="ml-2.5"></a>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/img-02.png" alt="">
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4 flex">
+                <div class="order-2 md:order-1">
+                    <img src="img/img-03.png" alt="">
+                </div>
+                <div class="flex items-center mb-5 md:mb-0 order-1 md:order-2">
+                    <div class="md:ml-12">
+                        <h2 class="text-3xl md:text-5xl font-semibold mb-2.5">Mejora tu carrera profesional con nuestros
+                            cursos</h2>
+                        <p class="text-lg text-gray-400 mb-5">Tendrás acceso a cursos bñasicos para reforzar los
+                            conceptos generales y a cursos avanzados
+                            para adquirir experiencia de casos reales</p>
+                        <a href="#" class="text-lg font-semibold flex">Ver cursos <img src="img/icon-forward.svg" alt=""
+                                class="ml-2.5"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100 py-24">
+        <div class="container mx-auto px-8">
+            <div class="grid lg:grid-cols-2">
+                <div class="bg-white p-8 sm:p-20 rounded-l-3xl rounded-r-3xl lg:rounded-l-none">
+                    <p class="text-lg text-gray-400 mb-10">Los cursos de Templune han sido increíbles, he podido
+                        aprender a mi ritmo y adquirir el conocimiento que necesito para mi trabajo.</p>
+                    <div class="flex items-center flex-col sm:flex-row">
+                        <img src="img/img-04.png" alt="" class="w-14 sm:mr-5 mb-5 sm:mb-0">
+                        <div class="sm:mr-5 sm:border-r sm:border-gray-200 sm:pr-5 mb-5 sm:mb-0">
+                            <p class="font-semibold">Adriana Campos</p>
+                            <p class="text-gray-400">Diseñadora UX</p>
+                        </div>
+                        <img src="img/logo-netflix.svg" alt="">
+                    </div>
+                </div>
+                <div class="testimonial lg:rounded-r-3xl hidden lg:block">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="bg-gray-100 pt-24">
+        <div class="bg-gray-800">
+            <div class="container mx-auto px-8">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex items-center md:my-24 my-14">
+                        <div class="">
+                            <h2 class="text-3xl md:text-5xl font-semibold mb-2.5 text-white">Comienza tu carrera
+                                profesional ahora</h2>
+                            <p class="text-lg text-gray-400 mb-5">Cientos de cursos de los mejores instructores para
+                                impulsar tu crecimiento como diseñador UX/UI
+                            </p>
+                            <div class="flex flex-col lg:flex-row text-center">
+                                <a href="#"
+                                    class="text-white border border-whitep py-3.5 px-6 rounded-md lg:mr-5 hover:bg-white hover:text-gray-800 transition duration-500 ease-in-out mb-5 lg:mb-0">Prueba
+                                    gratis 7 días</a>
+                                <a href="#"
+                                    class="text-white bg-blue-500 border border-blue-500p py-3.5 px-6 rounded-md hover:bg-blue-600 hover:border-blue-600 transition duration-500 ease-in-out">Comienza
+                                    tu carrera</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center relative">
+                        <img src="img/img-06.png" alt="" class="md:absolute bottom-0">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-800 border-t border-gray-400 py-14">
+        <div class="container mx-auto px-8 mb-14">
+            <div class="grid md:grid-cols-2">
+                <div class="mb-8 md:mb-0">
+                    <img src="img/logo.svg" alt="">
+                    <p class="text-gray-400 mb-10">Descubre la nueva forma de aprender</p>
+                    <div class="flex">
+                        <a href="#" class="mr-5"><img src="img/playstore.svg" alt=""></a>
+                        
+                        <a href="#"><img src="img/appstore.svg" alt=""></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="grid md:grid-cols-3">
+                        <div class="mb-8 md:mb-0">
+                            <p class="text-lg font-semibold text-white mb-5">Producto</p>
+                            <ul>
+                                <li class="mb-5"><a href="#" class="text-gray-400">Cursos</a></li>
+                                <li><a href="#" class="text-gray-400">Tutoriales</a></li>
+                            </ul>
+                        </div>
+                        <div class="mb-8 md:mb-0">
+                            <p class="text-lg font-semibold text-white mb-5">Compañia</p>
+                            <ul>
+                                <li class="mb-5"><a href="#" class="text-gray-400">Acerca de Templune</a></li>
+                                <li class="mb-5"><a href="#" class="text-gray-400">Blog</a></li>
+                                <li><a href="#" class="text-gray-400">Quiero ser instructor</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text-lg font-semibold text-white mb-5">Soporte</p>
+                            <ul>
+                                <li class="mb-5"><a href="#" class="text-gray-400">Chat en línea</a></li>
+                                <li><a href="#" class="text-gray-400">Hablar con un asesor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container mx-auto px-8 lg:px-0 border-t border-gray-400 pt-10">
+            <div class="grid md:grid-cols-2">
+                <p class="text-gray-400 mb-5 md:mb-0">Templune 2021 | Todos los derechos reservados</p>
+                <div class="flex md:justify-end">
+                    <p class="text-gray-400 mr-7">Síguenos en:</p>
+                    <a href="#" class="mr-7"><img src="img/icon-instagram.svg" alt=""></a>
+                    <a href="#" class="mr-7"><img src="img/icon-youtube.svg" alt=""></a>
+                    <a href="#"><img src="img/icon-linkedin.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function abrirMenu() {
+            let menu = document.getElementById("menu");
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+            } else {
+                menu.classList.add("hidden");
+            }
+        }
+    </script>
+</body>
+
+</html>
